@@ -23,20 +23,21 @@
     <div class="main-container" id="main-container">
         <div class="container" id="container">
             <div class="title-container" id="title-container">
-                <h1 class="main-title lalezar-regular text-white fs-1 fw-bolder f" id="main-title">تحدث معي</h1>
+                <h1 class="main-title lalezar-regular text-white fw-bolder mb-5" id="main-title">تحدث معي</h1>
             </div>
             <div class="message-card mt-2" id="message-card">
-                <button class="btn btn-primary h-25 me-3 rounded-5 shadow w-25 rubik-300" id="send-btn">أرسل</button>
-                <input type="text" class="form-text w-50 h-25 rounded-5 border-0 shadow rubik-300" id="request-input"
-                    placeholder="أدخل رسالتك من فضلك">
+                <div class="send-btn btn btn-primary h-25 me-3 rounded-3  w-25 rubik-300" id="send-btn"
+                    onclick="sendMessage()">أرسل</div>
+                <input type="text" class="request-input form-text mt-0 w-50 h-25 rounded-3 border-0  rubik-300 pe-3"
+                    id="request-input" placeholder="أدخل رسالتك من فضلك">
             </div>
-            <div class="response-card overflow-auto" id="response-card">
-                <p class="response rubik-300 fs-3 fw-light" id="response">إسأل أي سؤال و أنا سأجيبك بكل رحب و سعة؟
-                </p>
+            <div class="response-card rubik-300 p-5 fs-3 overflow-y-auto" id="response-card" style="direction: rtl;">
+                إسأل سؤالك من فضلك؟
             </div>
         </div>
     </div>
 </body>
 <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.9.0/axios.min.js"></script>
 
 </html>

@@ -54,9 +54,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px;
 }
 
 .response {
     margin: 5%;
+    direction: rtl;
+}
+
+.main-title {
+    font-size: 150px;
+}
+
+.send-btn {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.request-input{
     direction: rtl;
 }
